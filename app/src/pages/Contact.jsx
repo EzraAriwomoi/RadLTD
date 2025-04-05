@@ -167,8 +167,8 @@ function Contact() {
 
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
-                  <div className="bg-[#0c2340] p-3 rounded-full">
-                    <MapPin className="h-6 w-6 text-white" />
+                  <div className="bg-[#0c2340] p-2 rounded-full">
+                    <MapPin className="h-5 w-5 text-white" />
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold">Our Office</h3>
@@ -183,8 +183,8 @@ function Contact() {
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="bg-[#0c2340] p-3 rounded-full">
-                    <Phone className="h-6 w-6 text-white" />
+                  <div className="bg-[#0c2340] p-2 rounded-full">
+                    <Phone className="h-5 w-5 text-white" />
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold">Phone</h3>
@@ -193,19 +193,20 @@ function Contact() {
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="bg-[#0c2340] p-3 rounded-full">
-                    <Mail className="h-6 w-6 text-white" />
+                  <div className="bg-[#0c2340] p-2 rounded-full">
+                    <Mail className="h-5 w-5 text-white" />
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold">Email</h3>
                     <p className="text-gray-600">radiancestel@gmail.com</p>
                     <p className="text-gray-600">radiancestarltd@gmail.com</p>
+                    <p className="text-gray-600">ariwomoi@gmail.com</p>
                   </div>
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="bg-[#0c2340] p-3 rounded-full">
-                    <Clock className="h-6 w-6 text-white" />
+                  <div className="bg-[#0c2340] p-2 rounded-full">
+                    <Clock className="h-5 w-5 text-white" />
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold">Business Hours</h3>

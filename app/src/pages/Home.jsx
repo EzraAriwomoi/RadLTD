@@ -27,7 +27,7 @@ function Home() {
               <Button
                 asChild
                 size="lg"
-                className="bg-[#d4af37] hover:bg-[#c09c2c] text-black"
+                className="bg-white text-black hover:bg-transparent border-1 border-white hover:text-white"
               >
                 <Link to="/services">
                   Our Services <ArrowRight className="ml-2 h-4 w-4" />
@@ -119,7 +119,7 @@ function Home() {
             <div className="md:w-1/2 flex justify-center">
               <div className="relative w-full max-w-md aspect-video rounded-lg overflow-hidden shadow-lg">
                 <img
-                  src="/placeholder.jpg"
+                  src="training.jpg"
                   alt="Radiance Star training session"
                   className="object-cover w-full h-full"
                 />
@@ -142,7 +142,7 @@ function Home() {
           <Button
             asChild
             size="lg"
-            className="bg-[#d4af37] hover:bg-[#c09c2c] text-black"
+            className="bg-white text-black hover:bg-transparent border-1 border-white hover:text-white"
           >
             <Link to="/contact">Get in Touch</Link>
           </Button>

@@ -108,9 +108,9 @@ function About() {
             <div className="bg-white rounded-lg shadow-md overflow-hidden">
               <div className="aspect-[4/3] relative">
                 <img
-                  src="/placeholder.jpg"
+                  src="Julius.png"
                   alt="Julius Kamtoi Ariwomoi"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-contain"
                 />
               </div>
               <div className="p-6">

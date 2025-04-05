@@ -195,7 +195,7 @@ function Services() {
           <Button
             asChild
             size="lg"
-            className="bg-[#d4af37] hover:bg-[#c09c2c] text-black"
+            className="bg-white text-black hover:bg-transparent border-1 border-white hover:text-white"
           >
             <Link to="/contact">Get in touch</Link>
           </Button>
