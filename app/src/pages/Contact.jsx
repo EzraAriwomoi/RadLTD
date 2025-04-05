@@ -1,12 +1,18 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
-import { Textarea } from "@/components/ui/textarea"
-import { MapPin, Phone, Mail, Clock } from "lucide-react"
+import { useState } from "react";
+import { Button } from "@/components/ui/button";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { Textarea } from "@/components/ui/textarea";
+import { MapPin, Phone, Mail, Clock } from "lucide-react";
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -15,38 +21,38 @@ function Contact() {
     phone: "",
     county: "",
     message: "",
-  })
+  });
 
-  const [isSubmitting, setIsSubmitting] = useState(false)
-  const [isSubmitted, setIsSubmitted] = useState(false)
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isSubmitted, setIsSubmitted] = useState(false);
 
   const handleChange = (e) => {
-    const { name, value } = e.target
-    setFormData((prev) => ({ ...prev, [name]: value }))
-  }
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+  };
 
   const handleSubmit = (e) => {
-    e.preventDefault()
-    setIsSubmitting(true)
+    e.preventDefault();
+    setIsSubmitting(true);
 
     // Simulate form submission
     setTimeout(() => {
-      setIsSubmitting(false)
-      setIsSubmitted(true)
+      setIsSubmitting(false);
+      setIsSubmitted(true);
       setFormData({
         name: "",
         email: "",
         phone: "",
         county: "",
         message: "",
-      })
+      });
 
       // Reset success message after 5 seconds
       setTimeout(() => {
-        setIsSubmitted(false)
-      }, 5000)
-    }, 1500)
-  }
+        setIsSubmitted(false);
+      }, 5000);
+    }, 1500);
+  };
 
   return (
     <main className="flex min-h-screen flex-col">
@@ -55,7 +61,8 @@ function Contact() {
         <div className="container mx-auto">
           <h1 className="text-4xl font-bold mb-6">Contact Us</h1>
           <p className="text-xl max-w-3xl">
-            Get in touch with our team to learn more about our services or to schedule a consultation.
+            Get in touch with our team to learn more about our services or to
+            schedule a consultation.
           </p>
         </div>
       </section>
@@ -69,7 +76,8 @@ function Contact() {
                 <CardHeader>
                   <CardTitle>Send Us a Message</CardTitle>
                   <CardDescription>
-                    Fill out the form below and we'll get back to you as soon as possible.
+                    Fill out the form below and we'll get back to you as soon as
+                    possible.
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
@@ -142,7 +150,11 @@ function Contact() {
                       />
                     </div>
 
-                    <Button type="submit" className="w-full bg-[#0c2340] hover:bg-[#0a1c33]" disabled={isSubmitting}>
+                    <Button
+                      type="submit"
+                      className="w-full bg-[#0c2340] hover:bg-[#0a1c33]"
+                      disabled={isSubmitting}
+                    >
                       {isSubmitting ? "Sending..." : "Send Message"}
                     </Button>
                   </form>
@@ -160,8 +172,12 @@ function Contact() {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold">Our Office</h3>
-                    <p className="text-gray-600">Tawakal Building, Mwananchi Road</p>
-                    <p className="text-gray-600">Syokimau, Athi River District</p>
+                    <p className="text-gray-600">
+                      Tawakal Building, Mwananchi Road
+                    </p>
+                    <p className="text-gray-600">
+                      Syokimau, Athi River District
+                    </p>
                     <p className="text-gray-600">Machakos County, Kenya</p>
                   </div>
                 </div>
@@ -193,7 +209,9 @@ function Contact() {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold">Business Hours</h3>
-                    <p className="text-gray-600">Monday - Friday: 8:00 AM - 5:00 PM</p>
+                    <p className="text-gray-600">
+                      Monday - Friday: 8:00 AM - 5:00 PM
+                    </p>
                     <p className="text-gray-600">Saturday: 9:00 AM - 1:00 PM</p>
                     <p className="text-gray-600">Sunday: Closed</p>
                   </div>
@@ -210,7 +228,7 @@ function Contact() {
         </div>
       </section>
     </main>
-  )
+  );
 }
 
-export default Contact
+export default Contact;
