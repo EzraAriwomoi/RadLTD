@@ -7,6 +7,9 @@ import clsx from "clsx";
 
 function SiteHeader() {
   const [scrolled, setScrolled] = useState(false);
+  const [open, setOpen] = useState(false);
+
+  const handleClose = () => setOpen(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -78,13 +81,37 @@ function SiteHeader() {
         </div>
 
         {/* Mobile Menu */}
-        <Sheet>
+        <Sheet open={open} onOpenChange={setOpen}>
           <SheetTrigger asChild className="md:hidden">
-            <Button variant="outline" size="icon" aria-label="Toggle menu">
+            <Button
+              variant="outline"
+              size="icon"
+              aria-label="Toggle menu"
+              className={clsx(
+                "transition-colors border-gray-300",
+                scrolled
+                  ? "text-[#0c2340] hover:bg-gray-100"
+                  : "text-white bg-[#1c3559] hover:bg-[#1c3559]"
+              )}
+            >
               <Menu className="h-5 w-5" />
             </Button>
           </SheetTrigger>
+
           <SheetContent side="right" className="w-64 px-6 pt-10">
+            {/* Logo */}
+            <div className="mb-8 flex items-center gap-2">
+              <img
+                src="/logo.png"
+                alt="Radiance Star Logo"
+                className="h-8 w-auto"
+              />
+              <span className="text-xl font-bold text-[#0c2340]">
+                Radiance Star
+              </span>
+            </div>
+
+            {/* Mobile Nav */}
             <nav className="flex flex-col gap-6" aria-label="Mobile navigation">
               {[
                 { label: "Home", path: "/" },
@@ -95,19 +122,31 @@ function SiteHeader() {
                 <Link
                   key={label}
                   to={path}
+                  onClick={handleClose}
                   className="text-lg font-semibold text-[#0c2340] hover:text-[#0a1c33] transition-colors duration-200"
                 >
                   {label}
                 </Link>
               ))}
 
+              {/* Divider */}
+              <div className="border-t border-gray-200 my-6"></div>
+
+              {/* Call to Action */}
               <Button
                 asChild
-                className="mt-8 w-full bg-[#0c2340] hover:bg-[#0a1c33] text-white text-base font-semibold py-3"
+                className="w-full bg-[#0c2340] hover:bg-[#0a1c33] text-white text-base font-semibold py-3"
               >
-                <Link to="/contact">Get in Touch</Link>
+                <Link to="/contact" onClick={handleClose}>
+                  Get in Touch
+                </Link>
               </Button>
             </nav>
+
+            {/* Footer */}
+            <div className="mt-auto pt-10 text-xs text-gray-500 tracking-tight opacity-80">
+              © {new Date().getFullYear()} Radiance Star Consult Ltd
+            </div>
           </SheetContent>
         </Sheet>
       </div>

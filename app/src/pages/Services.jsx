@@ -13,15 +13,17 @@ function Services() {
   return (
     <main className="flex min-h-screen flex-col">
       {/* Hero Section */}
-      <section className="bg-[#0c2340] text-white py-16 px-4">
+      <section className="relative bg-[#0c2340] text-white py-16 px-4">
         <div className="container mx-auto">
-          <h1 className="text-4xl font-bold mb-6">Our Services</h1>
-          <p className="text-xl max-w-3xl">
+          <h1 className="text-3xl font-bold mb-6">Our Services</h1>{" "}
+          <p className="text-lg max-w-3xl">
+            {" "}
             Radiance Star Legislative Consult Ltd offers specialized training
             and consulting services designed to enhance the effectiveness of
             legislative bodies.
           </p>
         </div>
+        <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-white to-transparent" />
       </section>
 
       {/* Services List */}

@@ -7,15 +7,17 @@ function About() {
   return (
     <main className="flex min-h-screen flex-col">
       {/* Hero Section */}
-      <section className="bg-[#0c2340] text-white py-16 px-4">
+      <section className="relative bg-[#0c2340] text-white py-16 px-4">
         <div className="container mx-auto">
-          <h1 className="text-4xl font-bold mb-6">About Us</h1>
-          <p className="text-xl max-w-3xl">
+          <h1 className="text-3xl font-bold mb-6">About Us</h1>{" "}
+          <p className="text-lg max-w-3xl">
+            {" "}
             Radiance Star Legislative Consult Ltd is a premier legislative
             consulting firm in Kenya, dedicated to enhancing the effectiveness
             of legislative bodies.
           </p>
         </div>
+        <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-white to-transparent" />
       </section>
 
       {/* Company Profile */}
@@ -23,7 +25,7 @@ function About() {
         <div className="container mx-auto">
           <div className="flex flex-col md:flex-row gap-12">
             <div className="md:w-1/2">
-              <h2 className="text-3xl font-bold mb-6">Company Profile</h2>
+              <h2 className="text-2xl font-bold mb-6">Company Profile</h2>
               <div className="space-y-4 text-gray-700">
                 <p>
                   Radiance Star Legislative Consult Ltd trainers have been
@@ -58,36 +60,36 @@ function About() {
                       <CalendarDays className="h-5 w-5 text-[#0c2340] mt-0.5" />
                       <div>
                         <p className="font-medium">Date of Registration</p>
-                        <p className="text-gray-600">September 26, 2022</p>
+                        <p className="text-gray-600 text-sm">September 26, 2022</p>
                       </div>
                     </div>
                     <div className="flex items-start gap-3">
                       <MapPin className="h-5 w-5 text-[#0c2340] mt-0.5" />
                       <div>
                         <p className="font-medium">Registered Office</p>
-                        <p className="text-gray-600">
+                        <p className="text-gray-600 text-sm">
                           Tawakal Building, Mwananchi Road
                         </p>
-                        <p className="text-gray-600">
+                        <p className="text-gray-600 text-sm">
                           Syokimau, Athi River District
                         </p>
-                        <p className="text-gray-600">Machakos County, Kenya</p>
+                        <p className="text-gray-600 text-sm">Machakos County, Kenya</p>
                       </div>
                     </div>
                     <div className="flex items-start gap-3">
                       <Mail className="h-5 w-5 text-[#0c2340] mt-0.5" />
                       <div>
                         <p className="font-medium">Postal Address</p>
-                        <p className="text-gray-600">P.O. Box 41842, G.P.O</p>
-                        <p className="text-gray-600">00100 Nairobi, Kenya</p>
+                        <p className="text-gray-600 text-sm">P.O. Box 41842, G.P.O</p>
+                        <p className="text-gray-600 text-sm">00100 Nairobi, Kenya</p>
                       </div>
                     </div>
                     <div className="flex items-start gap-3">
                       <Phone className="h-5 w-5 text-[#0c2340] mt-0.5" />
                       <div>
                         <p className="font-medium">Contact</p>
-                        <p className="text-gray-600">+254 701 265 414</p>
-                        <p className="text-gray-600">radiancestel@gmail.com</p>
+                        <p className="text-gray-600 text-sm">+254 701 265 414</p>
+                        <p className="text-gray-600 text-sm">radiancestel@gmail.com</p>
                       </div>
                     </div>
                   </div>
@@ -117,10 +119,10 @@ function About() {
                 <h3 className="text-xl font-bold mb-1">
                   Julius Kamtoi Ariwomoi
                 </h3>
-                <p className="text-[#0c2340] font-medium mb-3">
+                <p className="text-[#0c2340] font-medium mb-2">
                   Lead Consultant & Director
                 </p>
-                <p className="text-gray-600">
+                <p className="text-gray-600 text-sm">
                   With extensive experience in legislative consulting, Julius
                   leads our team of experts in providing top-tier training and
                   consulting services.
@@ -140,8 +142,8 @@ function About() {
                 <h3 className="text-xl font-bold mb-1">
                   Carolyne Chepkorir Ariwomoi
                 </h3>
-                <p className="text-[#0c2340] font-medium mb-3">Director</p>
-                <p className="text-gray-600">
+                <p className="text-[#0c2340] font-medium mb-2">Director</p>
+                <p className="text-gray-600 text-sm">
                   Carolyne brings valuable insights to our organization, helping
                   shape our strategic direction and service offerings.
                 </p>

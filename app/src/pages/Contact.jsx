@@ -57,14 +57,17 @@ function Contact() {
   return (
     <main className="flex min-h-screen flex-col">
       {/* Hero Section */}
-      <section className="bg-[#0c2340] text-white py-16 px-4">
+      <section className="relative bg-[#0c2340] text-white py-16 px-4">
         <div className="container mx-auto">
-          <h1 className="text-4xl font-bold mb-6">Contact Us</h1>
-          <p className="text-xl max-w-3xl">
-            Get in touch with our team to learn more about our services or to
-            schedule a consultation.
+          <h1 className="text-3xl font-bold mb-6">Contact Us</h1>{" "}
+          <p className="text-lg max-w-3xl">
+            {" "}
+            Get in touch with our expert team to explore how our consultancy
+            services can support your parliamentary needs, or to schedule a
+            consultation.
           </p>
         </div>
+        <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-white to-transparent" />
       </section>
 
       {/* Contact Form and Info */}
@@ -90,7 +93,10 @@ function Contact() {
                   <form onSubmit={handleSubmit} className="space-y-4">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                       <div className="space-y-2">
-                        <Label htmlFor="name">Full Name</Label>
+                        <Label htmlFor="name" className="text-sm">
+                          {" "}
+                          Full Name
+                        </Label>
                         <Input
                           id="name"
                           name="name"
@@ -101,7 +107,10 @@ function Contact() {
                         />
                       </div>
                       <div className="space-y-2">
-                        <Label htmlFor="email">Email</Label>
+                        <Label htmlFor="email" className="text-sm">
+                          {" "}
+                          Email
+                        </Label>
                         <Input
                           id="email"
                           name="email"
@@ -116,7 +125,10 @@ function Contact() {
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                       <div className="space-y-2">
-                        <Label htmlFor="phone">Phone Number</Label>
+                        <Label htmlFor="phone" className="text-sm">
+                          {" "}
+                          Phone Number
+                        </Label>
                         <Input
                           id="phone"
                           name="phone"
@@ -126,7 +138,10 @@ function Contact() {
                         />
                       </div>
                       <div className="space-y-2">
-                        <Label htmlFor="county">County</Label>
+                        <Label htmlFor="county" className="text-sm">
+                          {" "}
+                          County
+                        </Label>
                         <Input
                           id="county"
                           name="county"
@@ -138,7 +153,10 @@ function Contact() {
                     </div>
 
                     <div className="space-y-2">
-                      <Label htmlFor="message">Message</Label>
+                      <Label htmlFor="message" className="text-sm">
+                        {" "}
+                        Message
+                      </Label>
                       <Textarea
                         id="message"
                         name="message"
@@ -171,14 +189,19 @@ function Contact() {
                     <MapPin className="h-5 w-5 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold">Our Office</h3>
-                    <p className="text-gray-600">
+                    <h3 className="text-lg font-semibold">Our Office</h3>{" "}
+                    <p className="text-sm text-gray-600">
+                      {" "}
                       Tawakal Building, Mwananchi Road
                     </p>
-                    <p className="text-gray-600">
+                    <p className="text-sm text-gray-600">
+                      {" "}
                       Syokimau, Athi River District
                     </p>
-                    <p className="text-gray-600">Machakos County, Kenya</p>
+                    <p className="text-sm text-gray-600">
+                      {" "}
+                      Machakos County, Kenya
+                    </p>
                   </div>
                 </div>
 
@@ -187,8 +210,8 @@ function Contact() {
                     <Phone className="h-5 w-5 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold">Phone</h3>
-                    <p className="text-gray-600">+254 701 265 414</p>
+                    <h3 className="text-lg font-semibold">Phone</h3>{" "}
+                    <p className="text-sm text-gray-600"> +254 701 265 414</p>
                   </div>
                 </div>
 
@@ -197,10 +220,16 @@ function Contact() {
                     <Mail className="h-5 w-5 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold">Email</h3>
-                    <p className="text-gray-600">radiancestel@gmail.com</p>
-                    <p className="text-gray-600">radiancestarltd@gmail.com</p>
-                    <p className="text-gray-600">ariwomoi@gmail.com</p>
+                    <h3 className="text-lg font-semibold">Email</h3>{" "}
+                    <p className="text-sm text-gray-600">
+                      {" "}
+                      radiancestel@gmail.com
+                    </p>
+                    <p className="text-sm text-gray-600">
+                      {" "}
+                      radiancestarltd@gmail.com
+                    </p>
+                    <p className="text-sm text-gray-600"> ariwomoi@gmail.com</p>
                   </div>
                 </div>
 
@@ -209,20 +238,24 @@ function Contact() {
                     <Clock className="h-5 w-5 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold">Business Hours</h3>
-                    <p className="text-gray-600">
+                    <h3 className="text-lg font-semibold">Business Hours</h3>{" "}
+                    <p className="text-sm text-gray-600">
+                      {" "}
                       Monday - Friday: 8:00 AM - 5:00 PM
                     </p>
-                    <p className="text-gray-600">Saturday: 9:00 AM - 1:00 PM</p>
-                    <p className="text-gray-600">Sunday: Closed</p>
+                    <p className="text-sm text-gray-600">
+                      {" "}
+                      Saturday: 9:00 AM - 1:00 PM
+                    </p>
+                    <p className="text-sm text-gray-600"> Sunday: Closed</p>
                   </div>
                 </div>
               </div>
 
               <div className="mt-8">
-                <h3 className="text-lg font-semibold mb-4">Postal Address</h3>
-                <p className="text-gray-600">P.O. Box 41842, G.P.O</p>
-                <p className="text-gray-600">00100 Nairobi, Kenya</p>
+                <h3 className="text-lg font-semibold mb-4">Postal Address</h3>{" "}
+                <p className="text-sm text-gray-600"> P.O. Box 41842, G.P.O</p>
+                <p className="text-sm text-gray-600"> 00100 Nairobi, Kenya</p>
               </div>
             </div>
           </div>
