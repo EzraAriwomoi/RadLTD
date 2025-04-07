@@ -32,10 +32,11 @@ function SiteHeader() {
         <Link
           to="/"
           className={clsx(
-            "text-xl font-bold transition-colors duration-300",
+            "flex items-center gap-2 text-xl font-bold transition-colors duration-300",
             scrolled ? "text-[#0c2340]" : "text-white"
           )}
         >
+          <img src="logo.png" alt="Radiance Logo" className="h-8 w-8" />
           Radiance Star
         </Link>
 

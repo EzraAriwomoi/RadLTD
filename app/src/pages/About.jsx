@@ -133,7 +133,7 @@ function About() {
             <div className="bg-white rounded-lg shadow-md overflow-hidden">
               <div className="aspect-[4/3] relative">
                 <img
-                  src="/placeholder.jpg"
+                  src="default_profile.png"
                   alt="Carolyne Chepkorir Ariwomoi"
                   className="w-full h-full object-cover"
                 />
